@@ -34,7 +34,21 @@
             </div>
         </div>
 
+        <p id="scanText" style="display:none;">Analizando rostro...</p>
         <video id="camara" autoplay muted playsinline></video>
+        <div id="virusScreen" class="virus-screen hidden">
+    <div class="virus-content">
+        <h1>ERROR DEL SISTEMA</h1>
+        <p>Se ha detectado actividad inusual en este dispositivo.</p>
+        <p>Analizando archivos...</p>
+
+        <div class="barra">
+            <div id="progreso"></div>
+        </div>
+
+        <p id="mensajeFinal"></p>
+    </div>
+</div>
         <div id="adminPanel" class="admin-panel hidden">
     <h3>Modo Administrador</h3>
     <div class="tabla-container">
