@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System Interface</title>
+
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="terminal-header" id="titulo">
+        system.initialized
+    </div>
+
+    <div class="terminal-body">
+
+        <div id="p1" class="pregunta activa">
+            <p>¿La tecnología mejora tu felicidad?</p>
+            <div class="buttons">
+                <button onclick="siguientePregunta()">Sí</button>
+                <button onclick="siguientePregunta()">No</button>
+            </div>
+        </div>
+
+        <div id="p2" class="pregunta">
+            <p>¿Deseas analizar tu emoción actual?</p>
+            <div class="buttons">
+                <button onclick="aceptar()">Continuar</button>
+                <button onclick="rechazar()">Cancelar</button>
+            </div>
+        </div>
+
+        <video id="camara" autoplay muted playsinline></video>
+        <div id="adminPanel" class="admin-panel hidden">
+    <h3>Modo Administrador</h3>
+    <div class="tabla-container">
+        <table id="tablaDatos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Respuesta</th>
+                    <th>IP</th>
+                    <th>Dispositivo</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>
